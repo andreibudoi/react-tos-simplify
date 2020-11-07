@@ -1,24 +1,24 @@
 import "./App.css";
 import FileUploader from "./components/FileUploader";
+import Logo from "./content/logo.svg";
 
 const App = () => {
     return (
         <>
-            <nav className="navbar sticky-top navbar-light bg-light mb-3">
-                <a className="navbar-brand" href="#">
+            <nav className="navbar sticky-top mb-5 paper-shadow">
+                <a className="navbar-brand navbar-title" href="#">
                     <img
                         className="mr-2"
-                        src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg"
-                        width="30"
-                        height="30"
+                        src={Logo}
+                        width="50"
+                        height="50"
                         alt=""
                     />
-                    Simplify your Terms and Conditions document!
+                    <span className="navbar-title">SimplifyT&C</span>
                 </a>
             </nav>
 
-
-            <div className="container text-center">
+            <div className="container">
                 <FileUploader />
             </div>
         </>

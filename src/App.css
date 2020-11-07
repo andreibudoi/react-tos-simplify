@@ -1,3 +1,23 @@
 .App {
   text-align: center;
 }
+.navbar {
+    background-color:#e3efff ;
+}
+
+.navbar-title {
+    color:#1076fc; 
+    font-weight: 900;
+}
+
+.alert-primary {
+    background-color:#e3efff ;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background: rgb(0,110,255);
+    background: linear-gradient(90deg, rgba(0,110,255,1) 0%, rgba(60,144,255,1) 100%);
+}
+.paper-shadow {
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+}

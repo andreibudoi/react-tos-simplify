@@ -9,7 +9,7 @@ const FileUploader = () => {
 
     const onChange = (e) => {
         setFile(e.target.files[0]);
-        if(e.target.files[0]){
+        if (e.target.files[0]) {
             setFilename(e.target.files[0].name);
         }
     };
@@ -51,19 +51,8 @@ const FileUploader = () => {
     return (
         <>
             {message && (
-                <div
-                    className="alert alert-info alert-dismissible fade show"
-                    role="alert"
-                >
+                <div className="alert alert-primary" role="alert">
                     {message}
-                    <button
-                        type="button"
-                        className="close"
-                        data-dismiss="alert"
-                        aria-label="Close"
-                    >
-                        <span aria-hidden="true">&times;</span>
-                    </button>
                 </div>
             )}
             <form onSubmit={onSubmit}>
@@ -95,7 +84,7 @@ const FileUploader = () => {
                     <input
                         type="submit"
                         value="Simplify"
-                        className="btn btn-primary btn-block mt-4"
+                        className="btn btn-primary btn-block mt-4 paper-shadow"
                     />
                 )}
             </form>
