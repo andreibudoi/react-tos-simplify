@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const FileUploader = () => {
+
+const FileUploader = ({ setDetails }) => {
     const [file, setFile] = useState("");
     const [filename, setFilename] = useState("Choose your PDF document");
     const [message, setMessage] = useState("");
@@ -33,7 +34,8 @@ const FileUploader = () => {
                         },
                     }
                 );
-
+                console.log(res.data);
+                setDetails(res.data);
                 setIsLoading(false);
             } catch (err) {
                 setIsLoading(false);
@@ -49,7 +51,7 @@ const FileUploader = () => {
     };
 
     return (
-        <>
+        <div className="mb-5">
             {message && (
                 <div className="alert alert-primary" role="alert">
                     {message}
@@ -88,7 +90,7 @@ const FileUploader = () => {
                     />
                 )}
             </form>
-        </>
+        </div>
     );
 };
 

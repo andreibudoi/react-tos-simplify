@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 import "./App.css";
 import FileUploader from "./components/FileUploader";
+import PdfDetails from "./components/PdfDetails";
 import Logo from "./content/logo.svg";
 
 const App = () => {
+    const [details, setDetails] = useState("");
     return (
         <>
             <nav className="navbar sticky-top mb-5 paper-shadow">
@@ -19,7 +22,9 @@ const App = () => {
             </nav>
 
             <div className="container">
-                <FileUploader />
+                <FileUploader setDetails={setDetails} />
+
+                { details && <PdfDetails details={details} /> } 
             </div>
         </>
     );
