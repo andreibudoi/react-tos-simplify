@@ -26,7 +26,7 @@ const FileUploader = ({ setDetails }) => {
 
             try {
                 const res = await axios.post(
-                    "http://localhost:5000/upload",
+                    "https://react-tos-simplify-api.herokuapp.com/upload",
                     formData,
                     {
                         headers: {
