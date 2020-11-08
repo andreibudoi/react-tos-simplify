@@ -52,6 +52,7 @@ const PdfDetails = ({ details }) => {
             {Object.keys(details.agreements).map((agreement) => (
                 <div key={agreement} className="alert alert-warning mb-3" ><h4 id={agreement}>{agreement}</h4></div>
             ))}
+            {(Object.keys(details.agreements).length === 0 && details.agreements.constructor === Object) && "No warnings to show"}
         </>
     );
 };
