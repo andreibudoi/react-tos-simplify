@@ -1,6 +1,6 @@
 # react-tos-simplify
 
-Web application made using react, bootstrap and axios. Allows you to upload Terms & Conditions or Privacy Policies pdf documents to the [backend API](https://github.com/andreibudoi/react-tos-simplify-api) and returns a privacy score and a list of relevant policies to the user, using an nlp library.
+Web application made using react, bootstrap and axios. Allows you to upload Terms & Conditions or Privacy Policies pdf documents to the [backend API](https://github.com/andreibudoi/react-tos-simplify-api) and returns a privacy score and a list of relevant policies to the user, using an nlp library. The API uses the [Natural](https://github.com/NaturalNode/natural) module.
 
 ## Getting Started with Create React App
 
