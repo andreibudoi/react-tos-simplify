@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# react-tos-simplify
+
+Web application made using react, bootstrap and axios. Allows you to upload Terms & Conditions or Privacy Policies pdf documents to the [backend API](https://github.com/andreibudoi/react-tos-simplify-api) and returns a privacy score and a list of relevant policies to the user, using an nlp library.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
